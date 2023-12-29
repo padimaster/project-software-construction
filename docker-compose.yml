@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  # Next App
+  frontend:
+    build:
+      context: .
+      dockerfile: ./apps/frontend/Dockerfile
+      target: development
+    command: npm run serve:frontend
+    ports:
+      - 3000:4200
+    depends_on:
+      - backend
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  # Express App
+  backend:
+    build:
+      context: .
+      dockerfile: ./apps/backend/Dockerfile
+    command: npm run serve:backend
+    ports:
+      - 4000:3333
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+networks:
+  default:
+    name: dev-network
+    driver: bridge

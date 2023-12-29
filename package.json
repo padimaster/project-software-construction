@@ -2,7 +2,12 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:frontend": "nx build frontend",
+    "build:backend": "nx build backend",
+    "serve:frontend": "nx serve frontend --hostname=0.0.0.0",
+    "serve:backend": "nx serve backend"
+  },
   "private": true,
   "dependencies": {
     "@nx/next": "17.2.8",
