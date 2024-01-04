@@ -6,7 +6,7 @@ export const getAcciones = async (req, res) => {
 }
 
 export const createAcciones = async (req, res) => {
-    const { nameStock, date, price, amount } = req.body
+    const { nameStock, date, price, amount } = req.body 
     const [rows] =await pool.query('insert into accion (idcartera, nombreaccion,fechacompra,precioaccion,cantidad,costototal) ' +
         ' values (1,?,?,?,?,?)', [nameStock, date, price, amount, (price * amount)])
 
