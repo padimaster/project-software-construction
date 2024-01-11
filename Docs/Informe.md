@@ -132,12 +132,3 @@ Express es un framework web para Node.js que simplifica la creación de aplicaci
 - Soporte para la creación de APIs RESTful.
 - Amplia comunidad y ecosistema de middleware.
 
-### 9. Nx (Monorepos):
-
-**Descripción:**
-Nx es una herramienta que facilita la gestión de monorepos en proyectos basados en Angular, React, Node.js y otros frameworks. Proporciona utilidades para organizar y desarrollar aplicaciones en un único repositorio.
-
-**Características Principales:**
-- División lógica de código en proyectos más pequeños dentro del monorepo.
-- Reutilización eficiente de código entre proyectos.
-- Soporte para pruebas, construcción y despliegue coordinados.
